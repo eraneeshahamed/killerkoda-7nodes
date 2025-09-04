@@ -1,4 +1,20 @@
 {
   "title": "7-node Ubuntu Lab",
-  "description": "Practice with Seven Ubuntu Servers for openshift installation prep"
+  "description": "Practice with seven Ubuntu servers for OpenShift installation prep",
+  "backend": { "imageid": "ubuntu:2004" },
+  "environment": { "uilayout": "terminal" },
+  "details": {
+    "steps": [
+      { "title": "Welcome", "text": "intro.md" }
+    ]
+  },
+  "hosts": {
+    "host01": { "name": "bastion" },
+    "host02": { "name": "master1" },
+    "host03": { "name": "master2" },
+    "host04": { "name": "master3" },
+    "host05": { "name": "worker1" },
+    "host06": { "name": "worker2" },
+    "host07": { "name": "infra" }
+  }
 }
